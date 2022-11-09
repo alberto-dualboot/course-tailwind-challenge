@@ -12,12 +12,159 @@
     />
     <!-- Tailwind core CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="public/style.css"
+    />
   </head>
 
   <body>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+    <header class="bg-[#212529] text-white">
+      <div class="md:container mx-auto  p-3">
+        <div class="inline-flex  text-xl font-bold">DBP Learn</div>
+        <a id="burguer" href="javascript:void(0);" class="md:hidden text-xl float-right text-slate-400 px-2 border-slate-400 border-2 rounded-sm" 
+          onclick="showResponsiveMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <nav class="md:inline-flex-imp md:float-right text-secondary"  style="display: none;">
+          <ul class="nav block md:flex g-2 font-bold">
+            <li class="nav-item md:px-2">About</li>
+            <li class="nav-item md:px-2">Services</li>
+            <li class="nav-item md:px-2">Clients</li>
+          </ul>
+        </nav> 
+        
+      </div> 
+    </header>
+    <main class="bg-slate-100 ">
+      <div class="bg-slate-600 text-center">
+        <div class="container mx-auto text-white py-12">
+          <div class="flex flex-wrap w-9/12 md:w-8/12 lg:w-5/12 mx-auto ">
+            <h2 class="font-bold mx-auto">Tailwind Challenge</h2>
+              <p class="mb-3">The aim of this challenge is to put into practice how to use Bootstrap to create a responsive UI. Before adding custom styles, check the docs to see if those styles can be achieved using a bootstrap class.</p>
+              <div class="flex mx-auto gap-2" >
+                <a class="btn bg-blue-600 font-bold">Bootstrap Docs</a>
+                <a class="btn bg-white text-black font-bold">Cheat sheet</a>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 container mx-auto py-10">
+        <div class="border border-slate-200 rounded-md shadow-sm hover:shadow-lg mx-3 bg-white">
+          <img class="rounded-t-md w-full aspect-[5/3]"
+            src="https://picsum.photos/400/267"
+            alt="a single red balloon"
+          />
+          <div class="px-5 py-6">
+            <p class="line-clamp-3 mb-5">Lorem ipsum dolor sit amet. Et perferendis dicta est quos quibusdam est culpa ipsam et tenetur magnam sed unde molestias qui laudantium suscipit ut placeat tempora.</p>
+            <span class="text-sm  leading-7 text-slate-400">8 min</span>
+            <a href="" class="read-more-style">Read</a>
+          </div>                
+        </div>
+        <div class="border border-slate-200 rounded-md shadow-sm hover:shadow-lg mx-3 bg-white">
+          <img class="rounded-t-md w-full aspect-[5/3]"
+            src="https://picsum.photos/400/267?v=2"
+            alt="balloons over some houses"
+          />
+          <div class="px-5 py-6">
+            <p class="line-clamp-2 mb-5">Lorem ipsum dolor sit amet. Et perferendis dicta est quos quibusdam est culpa ipsam et tenetur magnam sed unde molestias qui laudantium suscipit ut placeat tempora.</p>
+            <span class="text-sm  leading-7 text-slate-400">4 min</span>
+            <a href="" class="read-more-style">Read</a>
+          </div>
+        </div>
+        <div class="border border-slate-200 rounded-md shadow-sm hover:shadow-lg mx-3 bg-white">
+          <img class="rounded-t-md w-full aspect-[5/3]"
+            src="https://picsum.photos/400/267?v=3"
+            alt="close-up of balloons inflating"
+          />
+          <div class="px-5 py-6">
+            <p class="line-clamp-3 mb-5">Lorem ipsum dolor sit amet. Et perferendis dicta est quos quibusdam est culpa ipsam et tenetur magnam sed unde molestias qui laudantium suscipit ut placeat tempora.</p>
+            <span class="text-sm  leading-7 text-slate-400">18 min</span>
+            <a href="" class="read-more-style">Read</a>
+          </div>
+        </div>
+        <div class="border border-slate-200 rounded-md shadow-sm hover:shadow-lg mx-3 bg-white">
+          <img class="rounded-t-md w-full aspect-[5/3]"
+            src="https://picsum.photos/400/267?v=4"
+            alt="a single red balloon"
+          />
+          <div class="px-5 py-6">
+            <p class="line-clamp-3 mb-5">Lorem ipsum dolor sit amet. Et perferendis dicta est quos quibusdam est culpa ipsam et tenetur magnam sed unde molestias qui laudantium suscipit ut placeat tempora.</p>
+            <span class="text-sm  leading-7 text-slate-400">8 min</span>
+            <a href="" class="read-more-style">Read</a>
+          </div>                
+        </div>
+        <div class="border border-slate-200 rounded-md shadow-sm hover:shadow-lg mx-3 bg-white">
+          <img class="rounded-t-md w-full aspect-[5/3]"
+            src="https://picsum.photos/400/267?v=5"
+            alt="balloons over some houses"
+          />
+          <div class="px-5 py-6">
+            <p class="line-clamp-3 mb-5">Lorem ipsum dolor sit amet. Et perferendis dicta est quos quibusdam est culpa ipsam et tenetur magnam sed unde molestias qui laudantium suscipit ut placeat tempora.</p>
+            <span class="text-sm  leading-7 text-slate-400">4 min</span>
+            <a href="" class="read-more-style">Read</a>
+          </div>
+        </div>
+        <div class="border border-slate-200 rounded-md shadow-sm hover:shadow-lg mx-3 bg-white">
+          <img class="rounded-t-md w-full aspect-[5/3]"
+            src="https://picsum.photos/400/267?v=6"
+            alt="close-up of balloons inflating"
+          />
+          <div class="px-5 py-6">
+            <p class="line-clamp-3 mb-5">Lorem ipsum dolor sit amet. Et perferendis dicta est quos quibusdam est culpa ipsam et tenetur magnam sed unde molestias qui laudantium suscipit ut placeat tempora.</p>
+            <span class="text-sm  leading-7 text-slate-400">18 min</span>
+            <a href="" class="read-more-style">Read</a>
+          </div>
+        </div>
+        <div class="border border-slate-200 rounded-md shadow-sm hover:shadow-lg mx-3 bg-white">
+          <img class="rounded-t-md w-full aspect-[5/3]"
+            src="https://picsum.photos/400/267?v=7"
+            alt="a single red balloon"
+          />
+          <div class="px-5 py-6">
+            <p class="line-clamp-3 mb-5">Lorem ipsum dolor sit amet. Et perferendis dicta est quos quibusdam est culpa ipsam et tenetur magnam sed unde molestias qui laudantium suscipit ut placeat tempora.</p>
+            <span class="text-sm  leading-7 text-slate-400">8 min</span>
+            <a href="" class="read-more-style">Read</a>
+          </div>                
+        </div>
+        <div class="border border-slate-200 rounded-md shadow-sm hover:shadow-lg mx-3 bg-white">
+          <img class="rounded-t-md w-full aspect-[5/3]"
+            src="https://picsum.photos/400/267?v=8"
+            alt="balloons over some houses"
+          />
+          <div class="px-5 py-6">
+            <p class="line-clamp-3 mb-5">Lorem ipsum dolor sit amet. Et perferendis dicta est quos quibusdam est culpa ipsam et tenetur magnam sed unde molestias qui laudantium suscipit ut placeat tempora.</p>
+            <span class="text-sm  leading-7 text-slate-400">4 min</span>
+            <a href="" class="read-more-style">Read</a>
+          </div>
+        </div>
+        <div class="border border-slate-200 rounded-md shadow-sm hover:shadow-lg mx-3 bg-white">
+          <img class="rounded-t-md w-full aspect-[5/3]"
+            src="https://picsum.photos/400/267?v=9"
+            alt="close-up of balloons inflating"
+          />
+          <div class="px-5 py-6">
+            <p class="line-clamp-3 mb-5">Lorem ipsum dolor sit amet. Et perferendis dicta est quos quibusdam est culpa ipsam et tenetur magnam sed unde molestias qui laudantium suscipit ut placeat tempora.</p>
+            <span class="text-sm  leading-7 text-slate-400">18 min</span>
+            <a href="" class="read-more-style">Read</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-[#212529] p-5 text-gray-500">
+      <div class="md:container mx-auto">
+        <div class="inline-flex ">&copy; Company, Inc</div>
+        <nav class="inline-flex float-right "  >
+          <ul class="flex g-2 font-bold ">
+            <li class="px-2"><i class="fab fa-twitter" aria-hidden="true"></i></li>
+            <li class="px-2"><i class="fab fa-instagram" aria-hidden="true"></i></li>
+            <li class="px-2"><i class="fab fa-facebook" aria-hidden="true"></i></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <script src="./app.js"></script>
+   
   </body>
 </html>

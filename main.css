@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h2{
+        font-size: 2rem !important;
+    }
+    h1, h2, h3, h4, h5, h6{
+        margin-top: 0;
+        margin-bottom: 0.5rem !important;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+}
+
+@layer components {
+    .inline-flex-imp{
+        display: inline-flex !important;
+    }
+    .read-more-style {
+        @apply text-sm float-right border border-slate-600 px-2 py-1 rounded-md;
+    }
+    .btn{
+        @apply rounded-md font-bold py-2 px-3;
+    }
+  }
